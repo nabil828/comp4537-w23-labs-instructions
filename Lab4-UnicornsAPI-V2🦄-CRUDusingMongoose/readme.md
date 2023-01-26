@@ -140,7 +140,7 @@ This example defines 3 endpoints for the unicorn application:
 *   The first endpoint `/unicorns` allows for `GET` operation to retrieve all the unicorns and `POST` to create a new unicorn
 *   The second endpoint `/unicorns/{id}` allows for `GET` operation to retrieve a specific unicorn by ID, `PUT` operation to update a specific unicorn by ID, and `DELETE` operation to delete a specific unicorn by ID
 
-The endpoints are defined using the standard HTTP methods (GET, POST, PUT, DELETE) which are mapped to the CRUD operations(Create, Read, Update, Delete) respectively.
+The endpoints are defined using the standard HTTP methods (GET, POST, PUT/PATCH, DELETE) which are mapped to the CRUD operations(Create, Read, Update, Delete) respectively.
 
 ## Unicorns ~~Array~~ DB
 Use the following array as a *data store* for your unicorns. Populate the array elements as documents in a mongodb. Host your MongoDB on MongoDB Atlas.
@@ -295,14 +295,6 @@ Use the following array as a *data store* for your unicorns. Populate the array 
 <!-- ## Development Strategy and Hints -->
 
 # Testing 
-## Option I - Unit Testing
-You may use unit tests in the `__test__` folder. To run them use
-```
-npm test
-```
-in your vscode terminal 
-
-## Optional II
 Import `thunder-collection_Unicorns Test.json` into Thunder Client and run the tests.
 
 You may also write your own requests in REST client extension or create the requests using POSTMAN.
