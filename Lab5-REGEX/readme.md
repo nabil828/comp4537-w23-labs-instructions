@@ -81,7 +81,7 @@ urlRegexes.forEach(urlRegex => {
 });
 ```
 
-#  3. searching
+#  3. Searching
 In MongoDB/Mongoose, you can use regex to search for documents that match a pattern in a string field. 
 
 For example, you can use the `find` method with a regex query to search for users with a name that starts with "John":
